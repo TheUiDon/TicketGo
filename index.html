@@ -1,0 +1,1539 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS CDN Offline -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
+    crossorigin="anonymous">
+
+    <!-- Google Fonts CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Fontawsone Icon CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/jpg" href="/image/favicon.png">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Website Title-->
+    <title>Ticket Go</title>
+
+  </head>
+  <body>
+    
+    <!--Navbar Section-->
+    <nav class="navbar navbar-expand-lg ctmnvbg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="https://kota.co.uk/static/8105b2c0673461f411b92cbc7a83e06a/kota-logo.svg" alt="Logo" width="50" height="30">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto flex-row flex-wrap pt-2 py-md-0  mb-2 mb-lg-0">
+            <li class="nav-item col-6 col-lg-auto">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item col-6 col-lg-auto">
+              <a class="nav-link" href="product.html">Product</a>
+            </li>
+            <li class="nav-item col-6 col-lg-auto">
+              <a class="nav-link" href="custom-card.html">Custom Card</a>
+            </li>
+            <li class="nav-item col-6 col-lg-auto dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Menu 3
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Menu 1</a></li>
+                <li><a class="dropdown-item" href="#">Menu 2</a></li>
+              </ul>
+            </li>
+          </ul>
+          <hr class="d-md-none text-dark-50">
+          <ul class="navbar-nav ms-auto flex-row flex-wrap pt-2 py-md-0 mb-2 mb-lg-0">
+            <li class="nav-item col-6 col-lg-auto dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                &#163;GBP
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">&euro;EUR</a></li>
+                <li><a class="dropdown-item" href="#">&#163;GBP</a></li>
+                <li><a class="dropdown-item" href="#">&#36;USD</a></li>
+              </ul>
+            </li>
+            <li class="nav-item col-6 col-lg-auto">
+              <a class="nav-link" aria-current="page" href="#">SIGN IN
+                <i class="bi bi-dot"></i>  
+              </a>
+            </li>
+            <li class="nav-item col-6 col-lg-auto">
+              <a class="nav-link" href="#">SIGN UP</a>
+            </li>
+            <li class="nav-item col-6 col-lg-auto">
+              <a class="nav-link" href="#">
+                <i class="bi bi-search"></i>
+                <span class="d-md-none ms-2">
+                  Search
+                </span> 
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Banner Section-->
+    <section class="py-5 ctmmbbg text-center">
+      <div class="container">
+        <h1 class="py-3">
+          Find the best ticket in seconds.
+        </h1>
+        <p class="lead Text-muted">
+           Best prices. No hidden fees. Only trusted sites.
+        </p>
+        <!--Seacrh Form Section-->
+        <div class="row py-3 justify-content-center">
+          <div class="col-12 col-md-10">
+              <form class="d-none d-lg-block card search-bar shadow-lg card-sm">
+                  <div class="card-body search-bar-items row align-items-center">
+                      <div class="col-auto">
+                          <i class="bi bi-search h4 text-body"></i>
+                      </div>
+                      <div class="col">
+                          <input class="form-control form-control-lg form-control-borderless" 
+                          type="search" placeholder="Search for event, team, artist or venue">
+                      </div>
+                      <div class="col-auto">
+                          <button class="btn btn-lg btn-primary" type="submit">Search</button>
+                      </div>
+                  </div>
+              </form>
+              <!--  -->
+              <form class="d-lg-none card search-bar shadow-lg card-sm">
+                <div class="card-body search-bar-items row align-items-center">
+                    <div class="col-auto">
+                        <i class="bi bi-search h4 text-body"></i>
+                    </div>
+                    <div class="col">
+                        <input class="form-control form-control-md form-control-borderless" 
+                        type="search" placeholder="Search for event, team, artist or venue">
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn btn-md btn-primary" type="submit">Search</button>
+                    </div>
+                </div>
+            </form>
+          </div>
+        </div>
+          <!--end of col-->
+
+          <!--Spons Logo Section-->
+        <div class="row ctmsl py-5">
+          <div class="col">
+            <img src="https://res.cloudinary.com/dfwt0gh29/image/upload/h_35/v1541515002/providers/fp" 
+            alt="" class="ctmslimg">
+          </div>
+          <div class="col">
+            <img src="https://res.cloudinary.com/dfwt0gh29/image/upload/h_35/v1541515002/providers/tn" 
+            alt=""  class="ctmslimg">
+          </div>
+          <div class="col">
+            <img src="https://res.cloudinary.com/dfwt0gh29/image/upload/h_35/v1541515002/providers/ftp" 
+            alt=""  class="ctmslimg">
+          </div>
+          <div class="col">
+            <img src="https://res.cloudinary.com/dfwt0gh29/image/upload/h_35/v1541515002/providers/ti" 
+            alt=""  class="ctmslimg">
+          </div>
+          <div class="col">
+            <img src="https://res.cloudinary.com/dfwt0gh29/image/upload/h_35/v1541515002/providers/lft" 
+            alt=""  class="ctmslimg">
+          </div>
+          <div class="col">
+            <p class="ctmslimg">and more</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Top Competitions Section-->
+    <section>
+      <div class="py-lg-5 py-4 container">
+        <h4 class="pb-2">
+          Top Competitions
+        </h4>
+        <div id="Top-competions-slider" class="carousel slide carousel-multi-item" data-ride="carousel">
+        
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+        
+            <!--First slide-->
+            <div class="carousel-item active">
+        
+              <div class="col-3  pe-lg-3 pe-2" style="float:left">
+               <div class="mb-2">
+                  <img class="card-img-top rounded-bottom"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" 
+                    alt="Card image cap">
+                    <h5 class="pt-1 card-title">
+                      English Premier League Tickets
+                    </h5>
+                </div>
+              </div>
+        
+              <div class="col-3  pe-lg-3 pe-2" style="float:left">
+                <div class="mb-2">
+                  <img class="card-img-top rounded-bottom"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" 
+                    alt="Card image cap">
+                    <h5 class="pt-1 card-title">
+                      Spanish La Liga League Tickets
+                    </h5>
+                </div>
+              </div>
+        
+              <div class="col-3  pe-lg-3 pe-2" style="float:left">
+                <div class="mb-2">
+                  <img class="card-img-top rounded-bottom"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" 
+                    alt="Card image cap">
+                    <h5 class="pt-1 card-title">
+                      German Bundesliga Ticket
+                    </h5>
+                </div>
+              </div>
+              
+               <div class="col-3 pe-lg-3 pe-2" style="float:left">
+               <div class="mb-2">
+                  <img class="card-img-top rounded-bottom"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" 
+                    alt="Card image cap">
+                    <h5 class="pt-1 card-title">
+                      UEFA Euro 2021 League Ticket
+                    </h5>
+                </div>
+              </div>
+        
+            </div>
+            <!--/.First slide-->
+        
+            <!--Second slide-->
+            <div class="carousel-item">
+        
+              <div class="col-3 pe-lg-3 pe-2" style="float:left">
+                <div class="mb-2">
+                  <img class="card-img-top rounded-bottom"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                    <h5 class="pt-1 card-title">
+                     UEFA Champions League Tickets
+                    </h5>
+                </div>
+              </div>
+        
+              <div class="col-3 pe-lg-3 pe-2" style="float:left">
+                <div class="mb-2">
+                  <img class="card-img-top rounded-bottom"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" 
+                    alt="Card image cap">
+                    <h5 class="pt-1 card-title">
+                      English FA League Tickets
+                    </h5>
+                </div>
+              </div>
+        
+              <div class="col-3 pe-lg-3 pe-2" style="float:left">
+                <div class="mb-2">
+                  <img class="card-img-top rounded-bottom"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" 
+                    alt="Card image cap">
+                    <h5 class="pt-1 card-title">
+                      COPA America League Tickets
+                    </h5>
+                </div>
+              </div>
+              
+              <div class="col-3 pe-lg-3 pe-2" style="float:left">
+                <div class="mb-2">
+                  <img class="card-img-top rounded-bottom"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" 
+                    alt="Card image cap">
+                    <h5 class="pt-1 card-title">
+                      COPA Del Rey League Tickets
+                    </h5>
+                </div>
+              </div>
+        
+            </div>
+            <!--/.Second slide-->
+        
+           
+        
+          </div>
+          <!--/.Slides-->
+          <div class="swiper-button-prev ctmswnvprevbtn ctmswnvbtn ctmswnvprevbtn-1">
+            <button type="button" class="ctmarwbtn carousel-control-prev" data-bs-target="#Top-competions-slider" data-bs-slide="prev">
+              <svg viewBox="0 0 9 15" width="15" height="15">
+                <path fill="#C4C4C8" d="M8.163 1.6A.938.938 0 006.837.275L.275 6.837a.938.938 0 000 1.326l6.562 6.562A.938.938 0 008.163 13.4l-5.9-5.9 5.9-5.9z"></path>
+              </svg>
+            </button>
+          </div>
+		      <div class="swiper-button-next ctmswnvnxtbtn ctmswnvbtn ctmswnvnxtbtn-1">
+            <button type="button" class="ctmarwbtn carousel-control-next" data-bs-target="#Top-competions-slider" data-bs-slide="next">
+              <svg viewBox="0 0 9 15" width="15" height="15" class="ctmswnvbtnRotate180">
+                <path fill="#C4C4C8" d="M8.163 1.6A.938.938 0 006.837.275L.275 6.837a.938.938 0 000 1.326l6.562 6.562A.938.938 0 008.163 13.4l-5.9-5.9 5.9-5.9z"></path>
+              </svg>
+            </button>
+          </div>
+        
+        </div>
+        <!--/.Carousel Wrapper-->
+      </div>
+    </section>
+
+
+    <!--Top Football Club Custom Card Section-->
+    <section class="d-none d-lg-block">
+      <div class="py-lg-5 py-4 container">
+        <h4 class="pb-2">
+          Top Football Club
+        </h4>
+        <div id="Custom-card-slider" class="carousel slide carousel-multi-item" data-ride="carousel">
+        
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+        
+            <!--First slide-->
+            <div class="carousel-item  active">
+  
+                <div class="col-3  pe-lg-3 pe-2" style="float:left">
+                    <div class="card card-cover overflow-hidden rounded-5" style="background-image: url('https://images.unsplash.com/photo-1518188049456-7a3a9e263ab2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=667&q=80');">
+                      <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+                        <h4 class="mb-4">Liverpool Ticket</h4>
+                        <ul class="d-flex list-unstyled mt-auto">
+                          <li class="me-auto">
+                            <img src="https://res.cloudinary.com/dfwt0gh29/image/upload/w_40,h_40,c_pad/logos/premierleague/liverpool" 
+                              alt="Football Club Logo" width="40" height="40" class="rounded-circle border p-1 border-white">
+                          </li>
+                          <li class="d-flex align-items-center">
+                            <i class="bi me-1 bi-geo"></i>
+                            <small>Home &amp; Away</small>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+          
+                <div class="col-3  pe-lg-3 pe-2" style="float:left">
+                    <div class="card card-cover overflow-hidden rounded-5" style="background-image: url('https://images.unsplash.com/photo-1584189972301-754bde8fb9e0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80');">
+                      <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+                        <h4 class="mb-4">Bayern-Mun Ticket</h4>
+                        <ul class="d-flex list-unstyled mt-auto">
+                          <li class="me-auto">
+                            <img src="https://res.cloudinary.com/dfwt0gh29/image/upload/w_40,h_40,c_pad/logos/germanleague/bayernmunchen" 
+                              alt="Football Club Logo" width="40" height="40" class="rounded-circle border p-1 border-white">
+                          </li>
+                          <li class="d-flex align-items-center">
+                            <i class="bi me-1 bi-geo"></i>
+                            <small>Home &amp; Away</small>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+            
+                <div class="col-3  pe-lg-3 pe-2" style="float:left">
+                    <div class="card card-cover overflow-hidden rounded-5" style="background-image: url('https://images.unsplash.com/photo-1558266231-44509f897f20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=384&q=80');">
+                      <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+                        <h4 class="mb-4">Barcelona Ticket</h4>
+                        <ul class="d-flex list-unstyled mt-auto">
+                          <li class="me-auto">
+                            <img src="https://res.cloudinary.com/dfwt0gh29/image/upload/w_40,h_40,c_pad/logos/spanishleauge/fc_barcelona" 
+                              alt="Football Club Logo" width="40" height="40" class="rounded-circle border p-1 border-white">
+                          </li>
+                          <li class="d-flex align-items-center">
+                            <i class="bi me-1 bi-geo"></i>
+                            <small>Home &amp; Away</small>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+          
+                <div class="col-3  pe-lg-3 pe-2" style="float:left">
+                    <div class="card card-cover overflow-hidden rounded-5" style="background-image: url('https://images.unsplash.com/photo-1610894372363-21183fa31111?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=376&q=80');">
+                      <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+                        <h4 class="mb-4">Man-UTD Ticket</h4>
+                        <ul class="d-flex list-unstyled mt-auto">
+                          <li class="me-auto">
+                            <img src="https://res.cloudinary.com/dfwt0gh29/image/upload/w_40,h_40,c_pad/logos/premierleague/man-utd" 
+                              alt="Football Club Logo" width="40" height="40" class="rounded-circle border p-1 border-white">
+                          </li>
+                          <li class="d-flex align-items-center">
+                            <i class="bi me-1 bi-geo"></i>
+                            <small>Home &amp; Away</small>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+        
+            </div>
+            <!--/.First slide-->
+        
+            <!--Second slide-->
+            <div class="carousel-item">
+        
+              <div class="col-3  pe-lg-3 pe-2" style="float:left">
+                <div class="card card-cover overflow-hidden rounded-5" style="background-image: url('https://images.unsplash.com/photo-1577223664326-7840864a50f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80');">
+                  <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+                    <h4 class="mb-4">Arsenal Fc Ticket</h4>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img src="https://res.cloudinary.com/dfwt0gh29/image/upload/w_40,h_40,c_pad/logos/premierleague/arsenal" 
+                          alt="Football Club Logo" width="40" height="40" class="rounded-circle border p-1 border-white">
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <i class="bi me-1 bi-geo"></i>
+                        <small>Home &amp; Away</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-3  pe-lg-3 pe-2" style="float:left">
+                <div class="card card-cover overflow-hidden rounded-5" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIx39VDoDCpmfH-CnEZu3ZPqVuE5VXfdmmxA&usqp=CAU');">
+                  <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+                    <h4 class="mb-4">Chealsea Ticket</h4>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img src="https://res.cloudinary.com/dfwt0gh29/image/upload/w_40,h_40,c_pad/logos/premierleague/chelsea" 
+                          alt="Football Club Logo" width="40" height="40" class="rounded-circle border p-1 border-white">
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <i class="bi me-1 bi-geo"></i>
+                        <small>Home &amp; Away</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-3  pe-lg-3 pe-2" style="float:left">
+                <div class="card card-cover overflow-hidden rounded-5" style="background-image: url('https://images.unsplash.com/photo-1551388749-6b3478890d58?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');">
+                  <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+                    <h4 class="mb-4">Dortmund Ticket</h4>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img src="https://res.cloudinary.com/dfwt0gh29/image/upload/w_40,h_40,c_pad/logos/germanleague/Borrusia-dortmund" 
+                          alt="Football Club Logo" width="40" height="40" class="rounded-circle border p-1 border-white">
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <i class="bi me-1 bi-geo"></i>
+                        <small>Home &amp; Away</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-3  pe-lg-3 pe-2" style="float:left">
+                <div class="card card-cover overflow-hidden rounded-5" style="background-image: url('https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/2d/13/ab.jpg');">
+                  <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+                    <h4 class="mb-4">Junvetus Ticket</h4>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img src="https://res.cloudinary.com/dfwt0gh29/image/upload/w_40,h_40,c_pad/logos/seriea/Juventus" 
+                          alt="Football Club Logo" width="40" height="40" class="rounded-circle border p-1 border-white">
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <i class="bi me-1 bi-geo"></i>
+                        <small>Home &amp; Away</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!--/.Second slide-->
+        
+           
+        
+          </div>
+          <!--/.Slides-->
+          <div class="swiper-button-prev ctmswnvprevbtn ctmswnvbtn ctmswnvprevbtn-1">
+            <button type="button" class="ctmarwbtn carousel-control-prev" data-bs-target="#Custom-card-slider" data-bs-slide="prev">
+              <svg viewBox="0 0 9 15" width="15" height="15">
+                <path fill="#C4C4C8" d="M8.163 1.6A.938.938 0 006.837.275L.275 6.837a.938.938 0 000 1.326l6.562 6.562A.938.938 0 008.163 13.4l-5.9-5.9 5.9-5.9z"></path>
+              </svg>
+            </button>
+          </div>
+		      <div class="swiper-button-next ctmswnvnxtbtn ctmswnvbtn ctmswnvnxtbtn-1">
+            <button type="button" class="ctmarwbtn carousel-control-next" data-bs-target="#Custom-card-slider" data-bs-slide="next">
+              <svg viewBox="0 0 9 15" width="15" height="15" class="ctmswnvbtnRotate180">
+                <path fill="#C4C4C8" d="M8.163 1.6A.938.938 0 006.837.275L.275 6.837a.938.938 0 000 1.326l6.562 6.562A.938.938 0 008.163 13.4l-5.9-5.9 5.9-5.9z"></path>
+              </svg>
+            </button>
+          </div>
+          
+        
+        </div>
+        <!--/.Carousel Wrapper-->
+      </div>
+    </section>
+
+    <!--Top Football Matches Custom Card 2 Section-->
+    <section class="d-none d-lg-block">
+      <div class="py-lg-5 py-4 container">
+        <h4 class="pb-2">
+          Top Football Matches
+        </h4>
+        <div id="Custom-card-2-slider" class="carousel slide carousel-multi-item" data-ride="carousel">
+        
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+        
+            <!--First slide-->
+            <div class="carousel-item  active">
+  
+              <div class="col-3  pe-lg-3 pe-2" style="float:left">
+                <div class="card card-cover overflow-hidden rounded-5" style="background-image: url('https://as01.epimg.net/en/imagenes/2020/07/21/football/1595345982_087860_1595347561_noticia_normal_recorte1.jpg');">
+                  <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+                    <h4 class="mb-4">Liverpool Vs Chealsea</h4>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="d-flex align-items-center me-3">
+                        <i class="bi me-2 bi-geo"></i>
+                        <small>London</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <i class="bi me-2 bi-calendar3"></i>
+                        <small>28/04</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-3  pe-lg-3 pe-2" style="float:left">
+                <div class="card card-cover overflow-hidden rounded-5" style="background-image: url('https://i2-prod.football.london/chelsea-fc/fixtures-results/article18487992.ece/ALTERNATES/s1200/0_ChelseaManCity.jpg');">
+                  <div class="d-flex flex-column p-5 pb-3 text-white  text-shadow-1">
+                    <h4 class="mb-4">Liverpool Vs Chealsea</h4>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="d-flex align-items-center me-3">
+                        <i class="bi me-2 bi-geo"></i>
+                        <small>London</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <i class="bi me-2 bi-calendar3"></i>
+                        <small>28/04</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-3  pe-lg-3 pe-2" style="float:left">
+                <div class="card card-cover overflow-hidden text-white bg-dark rounded-5" style="background-image: url('https://i2-prod.football.london/chelsea-fc/fixtures-results/article18623974.ece/ALTERNATES/s1200/0_GettyImages-145343428-1.jpg');">
+                  <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+                    <h4 class="mb-4">Liverpool Vs Chealsea</h4>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="d-flex align-items-center me-3">
+                        <i class="bi me-2 bi-geo"></i>
+                        <small>London</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <i class="bi me-2 bi-calendar3"></i>
+                        <small>28/04</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-3  pe-lg-3 pe-2" style="float:left">
+                <div class="card card-cover overflow-hidden rounded-5" style="background-image: url('https://as01.epimg.net/en/imagenes/2020/02/29/football/1583009127_911828_1583009207_noticia_normal.jpg');">
+                  <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+                    <h4 class="mb-4">Liverpool Vs Chealsea</h4>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="d-flex align-items-center me-3">
+                        <i class="bi me-2 bi-geo"></i>
+                        <small>London</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <i class="bi me-2 bi-calendar3"></i>
+                        <small>28/04</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+            <!--/.First slide-->
+        
+            <!--Second slide-->
+            <div class="carousel-item">
+        
+              <div class="col-3  pe-lg-3 pe-2" style="float:left">
+                <div class="card card-cover overflow-hidden text-white bg-dark rounded-5" style="background-image: url('unsplash-photo-1.jpg');">
+                  <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+                    <h4 class="mb-4">Liverpool Vs Chealsea</h4>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="d-flex align-items-center me-3">
+                        <i class="bi me-2 bi-geo"></i>
+                        <small>London</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <i class="bi me-2 bi-calendar3"></i>
+                        <small>28/04</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-3  pe-lg-3 pe-2" style="float:left">
+                <div class="card card-cover overflow-hidden text-white bg-dark rounded-5" style="background-image: url('unsplash-photo-1.jpg');">
+                  <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+                    <h4 class="mb-4">Liverpool Vs Chealsea</h4>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="d-flex align-items-center me-3">
+                        <i class="bi me-2 bi-geo"></i>
+                        <small>London</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <i class="bi me-2 bi-calendar3"></i>
+                        <small>28/04</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-3  pe-lg-3 pe-2" style="float:left">
+                <div class="card card-cover overflow-hidden text-white bg-dark rounded-5" style="background-image: url('unsplash-photo-1.jpg');">
+                  <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+                    <h4 class="mb-4">Liverpool Vs Chealsea</h4>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="d-flex align-items-center me-3">
+                        <i class="bi me-2 bi-geo"></i>
+                        <small>London</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <i class="bi me-2 bi-calendar3"></i>
+                        <small>28/04</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-3  pe-lg-3 pe-2" style="float:left">
+                <div class="card card-cover overflow-hidden text-white bg-dark rounded-5" style="background-image: url('unsplash-photo-1.jpg');">
+                  <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+                    <h4 class="mb-4">Liverpool Vs Chealsea</h4>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="d-flex align-items-center me-3">
+                        <i class="bi me-2 bi-geo"></i>
+                        <small>London</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <i class="bi me-2 bi-calendar3"></i>
+                        <small>28/04</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!--/.Second slide-->
+        
+           
+        
+          </div>
+          <!--/.Slides-->
+          <div class="swiper-button-prev ctmswnvprevbtn ctmswnvbtn ctmswnvprevbtn-1">
+            <button type="button" class="ctmarwbtn carousel-control-prev" data-bs-target="#Custom-card-2-slider" data-bs-slide="prev">
+              <svg viewBox="0 0 9 15" width="15" height="15">
+                <path fill="#C4C4C8" d="M8.163 1.6A.938.938 0 006.837.275L.275 6.837a.938.938 0 000 1.326l6.562 6.562A.938.938 0 008.163 13.4l-5.9-5.9 5.9-5.9z"></path>
+              </svg>
+            </button>
+          </div>
+		      <div class="swiper-button-next ctmswnvnxtbtn ctmswnvbtn ctmswnvnxtbtn-1">
+            <button type="button" class="ctmarwbtn carousel-control-next" data-bs-target="#Custom-card-2-slider" data-bs-slide="next">
+              <svg viewBox="0 0 9 15" width="15" height="15" class="ctmswnvbtnRotate180">
+                <path fill="#C4C4C8" d="M8.163 1.6A.938.938 0 006.837.275L.275 6.837a.938.938 0 000 1.326l6.562 6.562A.938.938 0 008.163 13.4l-5.9-5.9 5.9-5.9z"></path>
+              </svg>
+            </button>
+          </div>
+          
+        
+        </div>
+        <!--/.Carousel Wrapper-->
+      </div>
+    </section>
+
+
+    <!--Top Football Matches Section-->
+    <section>
+      <div class="py-lg-5 py-4 container">
+        <h4 class="pb-2">
+          Top Football Matches
+        </h4>
+        <div id="Top-football-matches-slider" class="carousel slide carousel-multi-item" data-ride="carousel">
+        
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+        
+            <!--First slide-->
+            <div class="carousel-item  active">
+        
+              <div class="col-3 pe-lg-3 pe-2" style="float:left">
+               <div class="mb-2">
+					      <img class="card-img-top rounded-bottom"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" 
+                    alt="Card image cap">                    
+                  <h5 class="pt-1 card-title">
+                    Manchester United Vs Chealsea
+                  </h5>
+                </div>
+              </div>
+        
+              <div class="col-3 pe-lg-3 pe-2" style="float:left">
+                <div class="mb-2">
+                  <img class="card-img-top rounded-bottom"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" 
+                    alt="Card image cap">
+                    <h5 class="pt-1 card-title">
+                      Real Madrid Vs Barcelona
+                    </h5>
+                </div>
+              </div>
+        
+              <div class="col-3 pe-lg-3 pe-2" style="float:left">
+                <div class="mb-2">
+                  <img class="card-img-top rounded-bottom"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" 
+                    alt="Card image cap">
+                    <h5 class="pt-1 card-title">
+                      Dortmund Vs Bayern Munichen
+                    </h5>
+                </div>
+              </div>
+              
+               <div class="col-3 pe-lg-3 pe-2" style="float:left">
+               <div class="mb-2">
+                  <img class="card-img-top rounded-bottom"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" 
+                    alt="Card image cap">
+                    <h5 class="pt-1 card-title">
+                      Liverpool Vs Arsenal
+                    </h5>
+                </div>
+              </div>
+        
+            </div>
+            <!--/.First slide-->
+        
+            <!--Second slide-->
+            <div class="carousel-item">
+        
+              <div class="col-3 pe-lg-3 pe-2" style="float:left">
+                <div class="mb-2">
+                  <img class="card-img-top rounded-bottom"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                    <h5 class="pt-1 card-title">
+                     Spain Vs Neatherland
+                    </h5>
+                </div>
+              </div>
+        
+              <div class="col-3 pe-lg-3 pe-2" style="float:left">
+                <div class="mb-2">
+                  <img class="card-img-top rounded-bottom"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" 
+                    alt="Card image cap">
+                    <h5 class="pt-1 card-title">
+                      France Vs England
+                    </h5>
+                </div>
+              </div>
+        
+              <div class="col-3 pe-lg-3 pe-2" style="float:left">
+                <div class="mb-2">
+                  <img class="card-img-top rounded-bottom"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" 
+                    alt="Card image cap">
+                    <h5 class="pt-1 card-title">
+                      Argentina Vs Nigeria
+                    </h5>
+                </div>
+              </div>
+              
+              <div class="col-3 pe-lg-3 pe-2" style="float:left">
+                <div class="mb-2">
+                  <img class="card-img-top rounded-bottom"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" 
+                    alt="Card image cap">
+                    <h5 class="pt-1 card-title">
+                      Portugal Vs Brazil
+                    </h5>
+                </div>
+              </div>
+        
+            </div>
+            <!--/.Second slide-->
+        
+           
+        
+          </div>
+          <!--/.Slides-->
+          <div class="swiper-button-prev ctmswnvprevbtn ctmswnvbtn ctmswnvprevbtn-1">
+            <button type="button" class="ctmarwbtn carousel-control-prev" data-bs-target="#Top-football-matches-slider" data-bs-slide="prev">
+              <svg viewBox="0 0 9 15" width="15" height="15">
+                <path fill="#C4C4C8" d="M8.163 1.6A.938.938 0 006.837.275L.275 6.837a.938.938 0 000 1.326l6.562 6.562A.938.938 0 008.163 13.4l-5.9-5.9 5.9-5.9z"></path>
+              </svg>
+            </button>
+          </div>
+		      <div class="swiper-button-next ctmswnvnxtbtn ctmswnvbtn ctmswnvnxtbtn-1">
+            <button type="button" class="ctmarwbtn carousel-control-next" data-bs-target="#Top-football-matches-slider" data-bs-slide="next">
+              <svg viewBox="0 0 9 15" width="15" height="15" class="ctmswnvbtnRotate180">
+                <path fill="#C4C4C8" d="M8.163 1.6A.938.938 0 006.837.275L.275 6.837a.938.938 0 000 1.326l6.562 6.562A.938.938 0 008.163 13.4l-5.9-5.9 5.9-5.9z"></path>
+              </svg>
+            </button>
+          </div>
+          
+        
+        </div>
+        <!--/.Carousel Wrapper-->
+      </div>
+    </section>
+
+    <!--Top Artists Section-->
+    <section>
+      <div class="py-lg-5 py-4 container">
+        <h4 class="pb-2">
+          Top Artists
+        </h4>
+        <div id="Top-artists-slider" class="carousel slide carousel-multi-item" data-ride="carousel">
+        
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+        
+            <!--First slide-->
+            <div class="carousel-item  active">
+        
+              <div class="col-3 pe-lg-3 pe-2" style="float:left">
+               <div class="mb-2">
+                  <img class="card-img-top rounded-bottom"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" 
+                    alt="Card image cap">
+                    <h5 class="pt-1 card-title">
+                      Ed Sheeran Tickets
+                    </h5>
+                </div>
+              </div>
+        
+              <div class="col-3 pe-lg-3 pe-2" style="float:left">
+                <div class="mb-2">
+                  <img class="card-img-top rounded-bottom"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" 
+                    alt="Card image cap">
+                    <h5 class="pt-1 card-title">
+                      Drake Tickets
+                    </h5>
+                </div>
+              </div>
+        
+              <div class="col-3 pe-lg-3 pe-2" style="float:left">
+                <div class="mb-2">
+                  <img class="card-img-top rounded-bottom"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" 
+                    alt="Card image cap">
+                    <h5 class="pt-1 card-title">
+                      Adele Tickets
+                    </h5>
+                </div>
+              </div>
+              
+               <div class="col-3 pe-lg-3 pe-2" style="float:left">
+               <div class="mb-2">
+                  <img class="card-img-top rounded-bottom"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" 
+                    alt="Card image cap">
+                    <h5 class="pt-1 card-title">
+                      Stormzy Tickets
+                    </h5>
+                </div>
+              </div>
+        
+            </div>
+            <!--/.First slide-->
+        
+            <!--Second slide-->
+            <div class="carousel-item">
+        
+              <div class="col-3 pe-lg-3 pe-2" style="float:left">
+                <div class="mb-2">
+                  <img class="card-img-top rounded-bottom"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                    <h5 class="pt-1 card-title">
+                      Roddy Ricch Tickets
+                    </h5>
+                </div>
+              </div>
+        
+              <div class="col-3 pe-lg-3 pe-2" style="float:left">
+                <div class="mb-2">
+                  <img class="card-img-top rounded-bottom"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" 
+                    alt="Card image cap">
+                    <h5 class="pt-1 card-title">
+                      Wizkid Tickets
+                    </h5>
+                </div>
+              </div>
+        
+              <div class="col-3 pe-lg-3 pe-2" style="float:left">
+                <div class="mb-2">
+                  <img class="card-img-top rounded-bottom"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" 
+                    alt="Card image cap">
+                    <h5 class="pt-1 card-title">
+                      Burna Boy Ticket
+                    </h5>
+                </div>
+              </div>
+              
+              <div class="col-3 pe-lg-3 pe-2" style="float:left">
+                <div class="mb-2">
+                  <img class="card-img-top rounded-bottom"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" 
+                    alt="Card image cap">
+                    <h5 class="pt-1 card-title">
+                      Tion Wayne Tickets
+                    </h5>
+                </div>
+              </div>
+        
+            </div>
+            <!--/.Second slide-->
+        
+           
+        
+          </div>
+          <!--/.Slides-->
+          <div class="swiper-button-prev ctmswnvprevbtn ctmswnvbtn ctmswnvprevbtn-1">
+            <button type="button" class="ctmarwbtn carousel-control-prev" data-bs-target="#Top-artists-slider" data-bs-slide="prev">
+              <svg viewBox="0 0 9 15" width="15" height="15">
+                <path fill="#C4C4C8" d="M8.163 1.6A.938.938 0 006.837.275L.275 6.837a.938.938 0 000 1.326l6.562 6.562A.938.938 0 008.163 13.4l-5.9-5.9 5.9-5.9z"></path>
+              </svg>
+            </button>
+          </div>
+		      <div class="swiper-button-next ctmswnvnxtbtn ctmswnvbtn ctmswnvnxtbtn-1">
+            <button type="button" class="ctmarwbtn carousel-control-next" data-bs-target="#Top-artists-slider" data-bs-slide="next">
+              <svg viewBox="0 0 9 15" width="15" height="15" class="ctmswnvbtnRotate180">
+                <path fill="#C4C4C8" d="M8.163 1.6A.938.938 0 006.837.275L.275 6.837a.938.938 0 000 1.326l6.562 6.562A.938.938 0 008.163 13.4l-5.9-5.9 5.9-5.9z"></path>
+              </svg>
+            </button>
+          </div>
+          
+        
+        </div>
+        <!--/.Carousel Wrapper-->
+      </div>
+    </section>
+
+    <!--Line Break Section-->
+    <section>
+      <div class="container">
+        <hr class="text-dark-50">
+      </div>
+    </section>
+
+
+    <!--Our Mission-->
+    <section class="py-5">
+      <div class="container">
+        <div class="col ctmfieldimg text-center pb-3">
+          <img src="https://res.cloudinary.com/dfwt0gh29/image/upload/h_292,w_362/v1575458517/general-images/map" 
+          alt="Footbal Field" class="img-fluid">
+        </div>
+        <h3>
+          Our Mission - A safer & cheaper way to buy tickets worldwide
+        </h3>
+        <p class="lead text-muted">
+          SeatPick is built by fans for the fans, we made it our mission to help as many fans worldwide<br> find the best tickets to the events they love.
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="row mt-5">
+              <div class="col-2">
+                <i class="bi bi-tags-fill h3 ourmissionicon"></i>
+              </div>
+              <div class="col ms-2 ctmms4">
+                <div class="col ourmissionicontext mx-2 mx-lg-0">
+                  <h4>
+                    Save Money, the best ticket prices online
+                  </h4>
+                  <p class="text-muted">
+                    Find the absolute best prices on SeatPick, we find the cheapest prices and the best deals from dozens of sites and display the best results in one place.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col-2">
+                <i class="bi bi-safe-fill h3 ourmissionicon"></i>
+              </div>
+              <div class="col ms-2 ctmms4">
+                <div class="ourmissionicontext mx-2 mx-lg-0">
+                  <h4>
+                    Save Money, the best ticket prices online
+                  </h4>
+                  <p class="text-muted">
+                    Find the absolute best prices on SeatPick, we find the cheapest prices and the best deals from dozens of sites and display the best results in one place.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-none d-lg-block align-self-center">
+            <img src="https://res.cloudinary.com/dfwt0gh29/image/upload/h_292,w_362/v1575458517/general-images/map" 
+            alt="Footbal Field" class="float-end img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Testimonial-->
+    <section class="py-3 mx-2 mx-lg-0">
+      <hr class="text-dark-50">
+      <h3 class="text-center">
+        Happy Customers
+      </h3>
+      <div class="py-3">
+        <div id="Testimonial-slider" class="carousel slide carousel-multi-item" data-ride="carousel">
+        
+          <!--Slides-->
+          <div class="carousel-inner " role="listbox">
+        
+            <!--First slide-->
+            <div class="carousel-item active">
+
+              <div class="col-12 col-md-3 pe-lg-3 pe-md-2 pb-2" style="float:left">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-2">
+                        <img src="https://randomuser.me/api/portraits/men/11.jpg" 
+                        alt="men" class="rounded-circle avatar">
+                      </div>
+                      <div class="col ms-2">
+                        <div class="col">
+                          <h6>
+                            Danny,
+                          </h6>
+                          <small class="text-muted">
+                            Over one year
+                          </small>
+                        </div>
+                      </div>
+                      <small class="mt-1 text-muted">
+                        Cool Services, Very Helpful
+                      </small>
+                      <span>
+                        <i class="bi bi-star-fill" ></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-12 col-md-3 pe-lg-3 pe-md-2 pb-2" style="float:left">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-2">
+                        <img src="https://randomuser.me/api/portraits/women/13.jpg" 
+                        alt="men" class="rounded-circle avatar">
+                      </div>
+                      <div class="col ms-2">
+                        <div class="col">
+                          <h6>
+                            Jen,
+                          </h6>
+                          <small class="text-muted">
+                            Over two year
+                          </small>
+                        </div>
+                      </div>
+                      <small class="mt-1 text-muted">
+                        Fast Service
+                      </small>
+                      <span>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-12 col-md-3 pe-lg-3 pe-md-2 pb-2" style="float:left">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-2">
+                        <img src="https://randomuser.me/api/portraits/men/15.jpg" 
+                        alt="men" class="rounded-circle avatar">
+                      </div>
+                      <div class="col ms-2">
+                        <div class="col">
+                          <h6>
+                            George,
+                          </h6>
+                          <small class="text-muted">
+                            Months ago
+                          </small>
+                        </div>
+                      </div>
+                      <small class="mt-1 text-muted">
+                        Excellent Thanks!
+                      </small>
+                      <span>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-12  col-md-3 pe-lg-3 pe-md-2 pb-2" style="float:left">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-2">
+                        <img src="https://randomuser.me/api/portraits/women/20.jpg" 
+                        alt="men" class="rounded-circle avatar">
+                      </div>
+                      <div class="col ms-2">
+                        <div class="col">
+                          <h6>
+                            Lopez,
+                          </h6>
+                          <small class="text-muted">
+                            Over one year
+                          </small>
+                        </div>
+                      </div>
+                      <small class="mt-1 text-muted">
+                        Best in the Country
+                      </small>
+                      <span>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+            <!--/.First slide-->
+        
+            <!--Second slide-->
+            <div class="carousel-item">
+        
+              <div class="col-12  col-md-3 pe-lg-3 pe-md-2 pb-2" style="float:left">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-2">
+                        <img src="https://randomuser.me/api/portraits/men/5.jpg" 
+                        alt="men" class="rounded-circle avatar">
+                      </div>
+                      <div class="col ms-2">
+                        <div class="col">
+                          <h6>
+                            Mick,
+                          </h6>
+                          <small class="text-muted">
+                            Over Three year
+                          </small>
+                        </div>
+                      </div>
+                      <small class="mt-1 text-muted">
+                        Fast Delivery
+                      </small>
+                      <span>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-12  col-md-3 pe-lg-3 pe-md-2 pb-2" style="float:left">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-2">
+                        <img src="https://randomuser.me/api/portraits/men/14.jpg" 
+                        alt="men" class="rounded-circle avatar">
+                      </div>
+                      <div class="col ms-2">
+                        <div class="col">
+                          <h6>
+                            Joshua,
+                          </h6>
+                          <small class="text-muted">
+                            Over one year
+                          </small>
+                        </div>
+                      </div>
+                      <small class="mt-1 text-muted">
+                        Excellent
+                      </small>
+                      <span>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-12  col-md-3 pe-lg-3 pe-md-2 pb-2" style="float:left">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-2">
+                        <img src="https://randomuser.me/api/portraits/women/11.jpg" 
+                        alt="men" class="rounded-circle avatar">
+                      </div>
+                      <div class="col ms-2">
+                        <div class="col">
+                          <h6>
+                           Aaliyah,
+                          </h6>
+                          <small class="text-muted">
+                            Over two year
+                          </small>
+                        </div>
+                      </div>
+                      <small class="mt-1 text-muted">
+                        Very Helpful
+                      </small>
+                      <span>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-12  col-md-3 pe-lg-3 pe-md-2 pb-2" style="float:left">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-2">
+                        <img src="https://randomuser.me/api/portraits/men/17.jpg" 
+                        alt="men" class="rounded-circle avatar">
+                      </div>
+                      <div class="col ms-2">
+                        <div class="col">
+                          <h6>
+                            Steven,
+                          </h6>
+                          <small class="text-muted">
+                            Over one year
+                          </small>
+                        </div>
+                      </div>
+                      <small class="mt-1 text-muted">
+                        saved me alot of times finding ticket
+                      </small>
+                      <span>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+            <!--/.Second slide-->
+        
+           
+        
+          </div>
+          <!--/.Slides-->
+          <div class="swiper-button-prev ctmswnvprevbtn ctmtsnvbtn ctmswnvprevbtn-1">
+            <button type="button" class="ms-5 ctmarwbtn carousel-control-prev" data-bs-target="#Testimonial-slider" data-bs-slide="prev">
+              <svg viewBox="0 0 9 15" width="15" height="15">
+                <path fill="#C4C4C8" d="M8.163 1.6A.938.938 0 006.837.275L.275 6.837a.938.938 0 000 1.326l6.562 6.562A.938.938 0 008.163 13.4l-5.9-5.9 5.9-5.9z"></path>
+              </svg>
+            </button>
+          </div>
+		      <div class="swiper-button-next ctmswnvnxtbtn ctmtsnvbtn ctmswnvnxtbtn-1">
+            <button type="button" class="me-2 ctmarwbtn carousel-control-next" data-bs-target="#Testimonial-slider" data-bs-slide="next">
+              <svg viewBox="0 0 9 15" width="15" height="15" class="ctmswnvbtnRotate180">
+                <path fill="#C4C4C8" d="M8.163 1.6A.938.938 0 006.837.275L.275 6.837a.938.938 0 000 1.326l6.562 6.562A.938.938 0 008.163 13.4l-5.9-5.9 5.9-5.9z"></path>
+              </svg>
+            </button>
+          </div>
+          
+        
+        </div>
+        <!--/.Carousel Wrapper-->
+      </div>
+
+      <hr class="text-dark-50">
+    </section>
+
+
+    <!--Footer-->
+    <section class="ctmfooter py-3">
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>
+                Footer
+              </h5>
+              <ul class="text-decoration-none navbar-nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 1</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 2</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 3</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 4</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 5</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>
+                Footer
+              </h5>
+              <ul class="text-decoration-none navbar-nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 1</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 2</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 3</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 4</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 5</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>
+                Footer
+              </h5>
+              <ul class="text-decoration-none navbar-nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 1</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 2</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 3</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 4</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 5</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>
+                Footer
+              </h5>
+              <ul class="text-decoration-none navbar-nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 1</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 2</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 3</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 4</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 5</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>
+                Footer
+              </h5>
+              <ul class="text-decoration-none navbar-nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 1</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 2</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 3</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 4</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 5</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>
+                Footer
+              </h5>
+              <ul class="text-decoration-none navbar-nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 1</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 2</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 3</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 4</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted">Menu 5</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr class="text-dark-50">
+          <div class="row text-center">
+            <div class="col-12 col-md-6 col-lg-4 mb-3 ">
+              <img src="https://kota.co.uk/static/8105b2c0673461f411b92cbc7a83e06a/kota-logo.svg"
+               alt="Logo">
+              <span class="px-2">|</span>
+              <a href="#" class="text-decoration-none text-muted px-2">Terms of use</a>
+              <a href="#" class="text-decoration-none text-muted px-2">Privacy policy</a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-3 align-self-center">
+                <span>© 2021 BiadeDigital. All rights reserved.</span>
+            </div>
+            <div class="col-12  col-lg-4 mb-3 align-self-center">
+              
+              <a href="#" class="link-dark text-decoration-none">
+              <i class="bi bi-twitter ctmfticon text-dark mx-1"></i>
+              </a>
+              
+              <a href="#" class="link-dark text-decoration-none">
+                <i class="bi bi-facebook ctmfticon text-dark mx-1"></i>
+              </a>
+              
+              <a href="#" class="link-dark text-decoration-none">
+                <i class="bi bi-linkedin ctmfticon text-dark mx-1"></i>
+              </a>
+              
+              <a href="#" class="link-dark text-decoration-none">
+                <i class="bi bi-instagram ctmfticon text-dark mx-1"></i>
+              </a>
+              
+              <a href="#" class="link-dark text-decoration-none">
+                <i class="bi bi-youtube ctmfticon text-dark mx-1"></i>
+              </a>
+               
+              <a href="#" class="bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h3"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <!-- Bootstrap JavaScript Offline -->
+    <!-- <script src="/js/bootstrap.min.js"></script> -->
+    <!-- 
+      Note you can't use live and offline cdn together
+    -->
+
+    <!-- Bootstrap Javascript CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+  </body>
+</html>

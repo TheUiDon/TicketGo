@@ -1,0 +1,514 @@
+/* =============== Theme Details =============== */
+/*
+Theme Name: TicketGo
+Theme URI: https://biadedigital.com/
+Author: George 
+Author URI: https://biadedigital.com/
+Description: TicketGO is designed built with love by Biade Digital.
+Tags: Ticket, 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+This theme, TicketGO, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/* =============== Theme Details =============== */
+
+/* ============== Scroll bar ============== */
+body::-webkit-scrollbar {
+    width: 05px;       
+}
+
+body::-webkit-scrollbar-track {
+    background: black;  
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #003BDE;   
+    border-radius: 20px;       
+    border: 3px solid #003BDE; 
+}
+
+/* ============== End of Scroll bar ============== */
+
+.cstprdcrd {
+    background-color: #ffffff;
+}
+
+.breadcrumb-item a {
+    text-decoration: none!important;
+    color: #f8f9fa;
+}
+
+.breadcrumb-item+
+.breadcrumb-item::before {
+    float: left;
+    padding-right: .5rem;
+    color: #ffffff;
+    content: var(--bs-breadcrumb-divider, "/");
+}
+
+.cstprdcrd:hover {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.250)!important;
+    border-radius: .50rem!important;
+    margin-bottom: .5rem!important;
+}
+
+@media screen and (min-width: 100px) {
+    .d-ctmxs-block {
+        display: block!important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .d-ctmxs-block {
+        display: none!important;
+    }
+}
+
+
+.ctmimg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ctmswnvprevbtn-1 {
+    left: 0!important;
+}
+
+.carousel-control-prev {
+    left: auto;
+}
+
+.ctmswnvprevbtn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    cursor: pointer;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-transform: translate3d(0,-50%,0);
+    transform: translate3d(0,-50%,0);
+    left: 10px;
+    right: auto;
+}
+
+.ctmarwbtn {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    height: 32px;
+    width: 32px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 4px -1px rgb(0 0 0 / 50%);
+    box-shadow: 0 2px 4px -1px rgb(0 0 0 / 50%);
+    cursor: pointer;
+    outline: none;
+    z-index: 4;
+}
+
+.ctmarwbtn {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    height: 32px;
+    width: 32px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 4px -1px rgb(0 0 0 / 50%);
+    box-shadow: 0 2px 4px -1px rgb(0 0 0 / 50%);
+    cursor: pointer;
+    outline: none;
+    z-index: 4;
+}
+
+.ctmswnvnxtbtn-1 {
+    right: 0!important;
+}
+
+.ctmswnvbtn {
+    top: 80px!important;
+}
+
+.ctmswnvnxtbtn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    cursor: pointer;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-transform: translate3d(0,-50%,0);
+    transform: translate3d(0,-50%,0);
+    right: 10px;
+    left: auto;
+}
+
+.ctmarwbtn {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    height: 32px;
+    width: 32px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 4px -1px rgb(0 0 0 / 50%);
+    box-shadow: 0 2px 4px -1px rgb(0 0 0 / 50%);
+    cursor: pointer;
+    outline: none;
+    z-index: 4;
+}
+
+.ctmswnvbtnRotate180 {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.ctmarwbtn {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    height: 32px;
+    width: 32px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 4px -1px rgb(0 0 0 / 50%);
+    box-shadow: 0 2px 4px -1px rgb(0 0 0 / 50%);
+    cursor: pointer;
+    outline: none;
+    z-index: 4;
+}
+
+.ctmarwbtn {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    height: 32px;
+    width: 32px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 4px -1px rgb(0 0 0 / 50%);
+    box-shadow: 0 2px 4px -1px rgb(0 0 0 / 50%);
+    cursor: pointer;
+    outline: none;
+    z-index: 4;
+}
+
+.ctmswnvnxtbtn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    cursor: pointer;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-transform: translate3d(0,-50%,0);
+    transform: translate3d(0,-50%,0);
+    right: 10px;
+    left: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+.ctmh1 {
+    font-size: 50px;
+    width: 100%;
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 960px) {
+    .ctmnvbg {
+        background-color: #003BDE;
+        color: white;
+    }
+
+    .navbar-light 
+    .navbar-nav 
+    .nav-link {
+        color: white;
+    }
+
+    .navbar-light 
+    .navbar-toggler {
+        color: white;
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    .ctmmbbg {
+        background-color: #003BDE;
+        height: 335px;
+        color: white;
+    }
+}
+
+.btn-primary {
+    background-color: #003BDE;
+}
+
+
+.form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, 
+.form-control-borderless:active, 
+.form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.ctmslimg {
+    opacity: 1;
+    filter: grayscale(100%);
+}
+
+
+@media screen and (max-width: 995px){
+    .ctmsl {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .bi-dot {
+        display: none;
+    }
+}
+
+.ctmcrdimg {
+    background-position: 50%;
+    border-radius: 8px;
+    height: 162px;
+    overflow: hidden;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+    .ourmissionicon {
+        height: 52px;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 52px;
+        width: 52px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .ourmissionicon {
+        height: 50px!important;
+        width: 50px!important;
+    }
+
+    .col-2 {
+        flex: 0 0 auto!important;
+        width: 8.3333333333%!important;
+    }
+
+    .ourmissionicontext {
+        margin-left: 2.5rem!important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .ctmfieldimg {
+        display: none;
+    }
+}
+
+
+.ourmissionicon {
+    -webkit-align-items: center;
+    align-items: center;
+    background-color: #d9e2fa;
+    border-radius: 18px;
+    display: -webkit-flex;
+    display: flex;
+    height: 80px;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin-right: 35px;
+    min-width: 80px;
+    width: 80px;
+}
+
+.ourmissionicontext {
+    display: flex;
+    flex-flow: column nowrap;
+    place-content: stretch flex-start;
+    align-items: stretch;
+    align-self: auto;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0px;
+}
+
+/*================Custom Card Styling===========================*/
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #fff;
+    border-radius: .75rem;
+}
+
+.icon-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+.icon-link > .bi {
+    margin-top: .125rem;
+    margin-left: .125rem;
+    transition: transform .25s ease-in-out;
+    fill: currentColor;
+}
+
+.icon-link:hover > .bi {
+    transform: translate(.25rem);
+}
+
+.icon-square {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    border-radius: .75rem;
+}
+
+.rounded-4 { 
+    border-radius: .5rem; 
+}
+.rounded-5 { 
+    border-radius: 1rem; 
+}
+
+.text-shadow-1 { 
+    text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25); 
+}
+
+.text-shadow-2 { 
+    text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25); 
+}
+
+.text-shadow-3 { 
+    text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25); 
+}
+
+.card-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/*================ End Custom Card Styling===========================*/
+
+@media screen and (max-width: 500px){
+    .ctmms4 {
+        margin-left: 1.5rem!important;
+    }
+}
+.avatar {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+
+@media screen and (max-width: 960px) {
+    .ctmfooter {
+        background-color: #313131;
+        color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .ctmfticon {
+        color: #ffffff!important;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    .card-img-top {
+      background-size: 100%;
+      height: 100%;
+      width: 100%;
+    }
+
+    .card-title{
+      font-size: 10px!important;
+    }
+    
+}
